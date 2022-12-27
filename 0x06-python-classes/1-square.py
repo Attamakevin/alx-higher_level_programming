@@ -3,7 +3,8 @@
 """an empty class Square that defines a square"""
 
 
-class Square:
+class Square(int):
+
 
     """an empty class"""
 
@@ -14,4 +15,4 @@ def __init__(self, size):
     Args:
     size (int): the size of the new square"""
 
-    self.__size = size
+    square.__size = size
