@@ -3,6 +3,7 @@
 
 """an empty class Square that defines a square"""
 
+
 class Square:
 
     """an empty class"""
@@ -13,12 +14,10 @@ class Square:
         size (int): the size of the new square"""
         self.size = size
 
-
     @property
     def size(self):
         """get/set the current size of a square"""
         return (self.__size)
-
 
     @size.setter
     def size(self, value):
@@ -28,23 +27,17 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-
     def area(self):
 
-
         """defining area of square"""
-
 
         return (self.__size**2)
 
     def my_print(self):
-
         """print  the square with the character #"""
         for i in range(self.size):
-            print("#",end="")
             for j in range(self.size):
-                print("#",end="")
+                print("#", end="")
             print()
             if self.size == 0:
                 print()
-
