@@ -7,15 +7,18 @@
 class Rectangle:
 
     """initializes the rectangle class"""
-    def __init__(self, __width=0, __height=0):
+    def __init__(self, width=0, height=0):
 
-        """Initialize a new square.
+        """Initializing this rectangle class
         Args:
-            size (int): The size of the new square.
-            position (int, int): The position of the new square.
+            width: represents the width of the rectangle
+            height: represents the height of the rectangle
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
         """
-        self.__width = __width
-        self.__height = __height
+        self.width = width
+        self.height = height
 
     @property
     def height(self):
