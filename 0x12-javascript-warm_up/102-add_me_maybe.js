@@ -1,8 +1,6 @@
 #!/usr/bin/node
 function addMeMaybe (number, theFunction) {
-  const result = number + 1;
-  console.log('New value: ' + result);
-  return result;
-  theFunction();
+  number++;
+  console.log('New value: ' + number);
 }
 module.exports.addMeMaybe = addMeMaybe;
