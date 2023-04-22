@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Script that takes in an argument and displays all values in the states table
+""" Script that takes in an argument and displays
+    all values in the states table
     of hbtn_0e_0_usa where name matches the argument
 """
 
@@ -34,7 +35,8 @@ if __name__ == "__main__":
     # Fetch all the rows and display them
     rows = cursor.fetchall()
     for row in rows:
-        print(row)
+        if row[1] == state_name:
+            print(row)
 
     # Close the cursor and database connection
     cursor.close()
