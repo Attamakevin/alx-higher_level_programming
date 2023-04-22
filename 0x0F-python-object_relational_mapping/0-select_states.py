@@ -1,13 +1,8 @@
 #!/usr/bin/python3
-
+""" List all state in database """
 
 import MySQLdb
 import sys
-
-
-"""a script that lists all states from
-   the database hbtn_0e_0_usa
-"""
 
 if __name__ == '__main__':
 
