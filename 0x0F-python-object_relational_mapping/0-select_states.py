@@ -9,7 +9,7 @@ import sys
    the database hbtn_0e_0_usa
 """
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 
 
     # Get MySQL username, password, and database name as command line arguments
