@@ -30,12 +30,5 @@ if __name__ == '__main__':
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     # Fetch all rows returned by the query
-    rows = cursor.fetchall()
-
-    # Display the results
-    for row in rows:
+    for row in cursor.fetchall():
         print(row)
-
-    # Close cursor and connection to database
-    cursor.close()
-    conn.close()
