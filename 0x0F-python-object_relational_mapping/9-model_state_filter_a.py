@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" List the first State object from the database using sqlalchemy """
+""" List all state objects that conatains letter 'a' using sqlalchemy """
 
 if __name__ == '__main__':
 
@@ -18,8 +18,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    result = session.query(State).order_by(State.id).first()
-    if result:
-        print('{}: {}'.format(result.id, result.name))
-    else:
-        print('Nothing')
+    for state in session.query(State).order_by(State.id):
+        if 'a' in state.name:
+            print('{}: {}'.format(state.id, state.name))
