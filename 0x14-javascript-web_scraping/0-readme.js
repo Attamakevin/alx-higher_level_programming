@@ -10,3 +10,4 @@ fs.readFile(fileName, 'utf-8', (error, content) =>{
 		console.log(content);
 	}
 });
+
